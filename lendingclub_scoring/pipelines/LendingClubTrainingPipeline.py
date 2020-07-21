@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, roc_auc_score, mean_squared_error, m
 from sklearn.model_selection import train_test_split
 
 from lendingclub_scoring.data.DataProvider import LendingClubDataProvider
-
+### Hardcode and get it running in CICD
 
 class LendingClubTrainingPipeline():
     def __init__(self, spark, input_path, model_name, limit=None):

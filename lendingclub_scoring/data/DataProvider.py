@@ -3,11 +3,11 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from sklearn.model_selection import train_test_split
 
-
 predictors = ["term", "home_ownership", "purpose", "addr_state", "verification_status", "application_type",
               "loan_amnt", "emp_length", "annual_inc", "dti", "delinq_2yrs", "revol_util", "total_acc",
               "credit_length_in_years", "int_rate", "net", "issue_year"]
 target = 'bad_loan'
+
 
 class LendingClubDataProvider():
     def __init__(self, spark, input_path, limit=None):

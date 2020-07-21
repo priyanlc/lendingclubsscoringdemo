@@ -13,6 +13,7 @@ def read_config(name, root):
         raise FileNotFoundError(
             f"{e}. Please include a config file!")
 
+
 def setupMlflowConf(conf):
     mlflow.set_experiment(conf['experiment-path'])
     try:
